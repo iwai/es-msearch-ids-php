@@ -1,0 +1,21 @@
+{
+  "chmod": "0755",
+  "files": [
+    "vendor/autoload.php"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": [ "tests" ],
+      "in": [
+        "vendor/chh",
+        "vendor/psr",
+        "vendor/guzzlehttp",
+        "vendor/composer"
+      ]
+    }
+  ],
+  "main": "bin/es-msearch-ids.php",
+  "output": "bin/es-msearch-ids.phar",
+  "stub": true
+}
