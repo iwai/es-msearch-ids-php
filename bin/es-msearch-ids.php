@@ -136,7 +136,7 @@ try {
     }
     fclose($fp);
 
-    if ($count > 0) {
+    if ($_msearch_query != '' || count($_id_values) > 0) {
         $_msearch_query .= json_encode([ 'index' => $index ]) . "\n";
         $_msearch_query .= json_encode([ 'size' => $vsize, 'query' => [ 'ids' => [ 'values' => $_id_values ] ] ]) . "\n";
 
